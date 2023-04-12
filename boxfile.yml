@@ -1,11 +1,11 @@
 run.config:
-  image: nanobox/build
+  image: mubox/build
   engine: golang
   engine.config:
-    package: github.com/nanobox-io/nanobox
+    package: github.com/mu-box/microbox
   dev_packages:
     - py27-awscli
-    - coreutils  
+    - coreutils
   extra_steps:
     - "go get github.com/mitchellh/gox"
     - "go get github.com/kardianos/govendor"
